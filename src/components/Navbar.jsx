@@ -20,7 +20,6 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          {/* <img src={logo} alt="logo" className='w-9 h-9 object-contain' /> */}
           <img src={favicon} alt="logo" className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>ahin &nbsp;<span className='sm:block hidden'><span className='text-[#8a50ae]'>|</span>&nbsp; Web Developer</span></p>
         </Link>
