@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Feedbacks = () => {
   return (
-    <div>Feedbacks</div>
+    <div className='hidden'>Add later</div>
   )
 }
 

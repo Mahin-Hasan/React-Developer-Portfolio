@@ -6,6 +6,7 @@ import { navLinks } from '../constants';
 import { logo, icon, menu, close,favicon } from '../assets';
 
 const Navbar = () => {
+
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
@@ -23,7 +24,7 @@ const Navbar = () => {
           <img src={favicon} alt="logo" className='w-9 h-9 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>ahin &nbsp;<span className='sm:block hidden'><span className='text-[#8a50ae]'>|</span>&nbsp; Web Developer</span></p>
         </Link>
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-1 md:gap-4 lg:gap-10'>
           {
             navLinks.map((link) => (
               <li
@@ -43,7 +44,7 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
 
           />
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 violet-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 bg-gradient-to-r from-violet-900 to-fuchsia-900 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {
                 navLinks.map((link) => (

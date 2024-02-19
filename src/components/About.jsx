@@ -5,6 +5,9 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
+
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -46,7 +49,23 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I am an intermediate-level MERN Stack developer proficient in React, Express, Node, MongoDB, and JavaScript. Known for my rapid learning abilities, I work closely with clients to develop effective, scalable, and user-friendly solutions, addressing real-world challenges. Let's collaborate to transform your ideas into reality!
+        I am a MERN Stack developer proficient in React, Express, Node, MongoDB, and JavaScript. Known for my rapid learning abilities, I always keep myself updated by learning new technologies and frameworks. Let's collaborate to transform your ideas into reality!
+        <span className="block">
+        <a href = "mailto: abc@example.com"><span className="flex items-center gap-2">
+        Send Email <MdEmail className="text-purple-500" />:<li className="text-purple-500 underline list-none">mahinhasan3700@gmail.com</li> </span></a>
+        {/* <Link to="mailto: abc@example.com" target='black'>
+          <button
+            className='bg-purple-950 py-3 px-6 rounded-xl my-4 outline-none w-fit text-white font-bold shadow-md shadow-primary'
+          >
+            <div className='flex justify-center items-center gap-2'>
+              <span>
+                Github
+              </span>
+              
+            </div>
+          </button>
+        </Link> */}
+        </span>
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

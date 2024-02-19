@@ -28,9 +28,22 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import aiub from "./company/aiublogo.png";
+import concepts from "./company/concepts.png";
+import php from "./company/php.png";
+import mern from "./company/mern.png";
+
+
+
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import sharebite from "./sharebite.png";
+import jdm from "./jdm.png";
+import moments from "./moments.png";
+import wedding from "./wedding.png";
+import donation from "./donation.png";
+import gym from "./gym.png";
 
 export {
   logo,
@@ -60,7 +73,17 @@ export {
   shopify,
   starbucks,
   tesla,
+  aiub,
+  concepts,
+  php,
+  mern,
   carrent,
   jobit,
   tripguide,
+  sharebite,
+  jdm,
+  moments,
+  wedding,
+  donation,
+  gym,
 };
