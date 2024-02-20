@@ -20,7 +20,7 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am a <span className='text-[#915eff] font-semibold'>MERN</span> Stack developer, <br className='sm:block hidden' /> building functional web applicaitons</p>
           <Link to='https://drive.google.com/file/d/12GNKR4q8Bh13_8rvHEEdono8EH-owrXP/view?usp=drive_link' target='black'>
             <button
-              className='bg-purple-950 py-3 px-6 rounded-xl my-4 outline-none w-fit text-white font-bold shadow-md shadow-primary'
+              className='bg-purple-950 py-2 sm:py-3 px-3 sm:px-6 rounded-xl my-1 sm:my-4 outline-none w-fit text-white font-bold shadow-md shadow-primary'
             >
               <div className='flex justify-center items-center gap-2'>
                 <span>
@@ -28,12 +28,11 @@ const Hero = () => {
                 </span>
                 <IoMdDownload />
               </div>
-
             </button>
           </Link>
           <Link to="tel:+8801628252625">
             <button
-              className='bg-purple-950 py-3 px-6 rounded-xl my-4 ms-2 outline-none w-fit text-white font-bold shadow-md shadow-primary'
+              className='bg-purple-950 py-2 sm:py-3 px-3 sm:px-6 rounded-xl my-1 ms-1 sm:ms-2 sm:my-4 outline-none w-fit text-white font-bold shadow-md shadow-primary'
             >
               <div className='flex justify-center items-center gap-2'>
                 <span>Contact</span>
@@ -41,9 +40,6 @@ const Hero = () => {
               </div>
             </button>
           </Link>
-
-          {/* <button type="button" className="px-8 py-3 font-semibold rounded dark:bg-gray-100 dark:text-gray-800">Basic</button> */}
-          {/* <a href="tel:+8802887875967">+88 02 8878759 - 68</a> */}
         </div>
       </div>
       <ComputersCanvas />

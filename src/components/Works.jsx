@@ -1,4 +1,3 @@
-import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -18,7 +17,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  live_link
+  live_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -50,7 +49,6 @@ const ProjectCard = ({
             </div>
           </div>
         </div>
-
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
           <p className='mt-2 text-secondary text-[14px]'>{description}</p>
@@ -80,7 +78,6 @@ const ProjectCard = ({
             </button>
           </Link>
         </div>
-          {/* <p className="">asd</p> */}
       </Tilt>
     </motion.div>
   );
@@ -104,7 +101,7 @@ const Works = () => {
           links to code repositories and live demos in it. It showcases my aptitude for resolving intricate issues, collaborating with various technologies, and efficiently overseeing projects.
         </motion.p>
       </div>
-      <div>
+      <motion.div variants={fadeIn("up", "spring")}>
         <Link to='https://github.com/Mahin-Hasan' target='black'>
           <button
             className='bg-purple-950 py-3 px-6 rounded-xl my-4 outline-none w-fit text-white font-bold shadow-md shadow-primary'
@@ -117,7 +114,7 @@ const Works = () => {
             </div>
           </button>
         </Link>
-      </div>
+      </motion.div>
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />

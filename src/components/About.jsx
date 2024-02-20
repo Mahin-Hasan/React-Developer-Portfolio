@@ -51,20 +51,9 @@ const About = () => {
       >
         I am a MERN Stack developer proficient in React, Express, Node, MongoDB, and JavaScript. Known for my rapid learning abilities, I always keep myself updated by learning new technologies and frameworks. Let's collaborate to transform your ideas into reality!
         <span className="block">
-        <a href = "mailto: abc@example.com"><span className="flex items-center gap-2">
-        Send Email <MdEmail className="text-purple-500" />:<li className="text-purple-500 underline list-none">mahinhasan3700@gmail.com</li> </span></a>
-        {/* <Link to="mailto: abc@example.com" target='black'>
-          <button
-            className='bg-purple-950 py-3 px-6 rounded-xl my-4 outline-none w-fit text-white font-bold shadow-md shadow-primary'
-          >
-            <div className='flex justify-center items-center gap-2'>
-              <span>
-                Github
-              </span>
-              
-            </div>
-          </button>
-        </Link> */}
+        <a href = "mailto: mahinhasan3700@gmail.com"><span className="flex items-center gap-2">
+        <span className="hidden sm:block">Send Email</span> <MdEmail className="text-purple-500 text-xl" />:<li className="text-purple-500 underline list-none">mahinhasan3700@gmail.com</li> </span></a>
+        
         </span>
       </motion.p>
 
