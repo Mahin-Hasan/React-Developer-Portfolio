@@ -146,6 +146,14 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind,
   },

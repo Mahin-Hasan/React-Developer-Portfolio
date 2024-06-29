@@ -6,7 +6,6 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 
 const ServiceCard = ({ index, title, icon }) => (
