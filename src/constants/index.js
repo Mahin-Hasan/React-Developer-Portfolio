@@ -41,12 +41,12 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "learnings",
-    title: "Learnings",
-  },
-  {
     id: "projects",
     title: "Projects",
+  },
+  {
+    id: "learnings",
+    title: "Learnings",
   },
   {
     id: "contact",
@@ -288,6 +288,7 @@ const experiences = [
     ],
   },
 ];
+
 const testimonials = [
   {
     testimonial:
@@ -315,6 +316,8 @@ const testimonials = [
   },
 ];
 
+
+//prev project working
 const projects = [
   {
     name: "ShareBite",
@@ -501,6 +504,7 @@ const projects = [
     live_link: "https://mahin-hasan.github.io/Fitness-Gym/",
   },
 ];
+//testing
 // const projects = [
 //   {
 //     name: "ShareBite",
@@ -609,6 +613,309 @@ const projects = [
 //     live_link: "https://moments-matrimony.web.app/",
 //   },
 // ];
+
+// const project2 = [
+
+//   {
+//     name: "Wedding Snapshots",
+//     description:
+//       "My project has cool features! I created six fake json data with pictures and put them on the website. You can log in with Google or email. The registration and login forms check for mistakes. When you're logged in, your details show up on the top. Only logged-in folks can see the good stuff on the site.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "animationn",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "tailwind",
+//         color: "red-text-gradient",
+//       },
+//       {
+//         name: "firebase",
+//         color: "orange-text-gradient",
+//       },
+//       {
+//         name: "AOS Package",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: wedding,
+//     source_code_link: "https://github.com/Mahin-Hasan/Wedding-Snapshots-React",
+//     live_link: "https://wedding-snapshots.web.app/",
+//   },
+//   {
+//     name: "Donation Campaign",
+//     description:
+//       "My project includes dynamic loading of 12 fake entries, donation details display on a separate page, local storage for funded donations, a | See All Jobs | button for more than 4 items donated, a pie chart for donation info, and a search feature by category.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "json",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "recharts",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "router",
+//         color: "orange-text-gradient",
+//       },
+//     ],
+//     image: donation,
+//     source_code_link: "https://github.com/Mahin-Hasan/Donation-Campaign-React",
+//     live_link: "https://marvelous-travesseiro-c9daa0.netlify.app/",
+//   },
+//   {
+//     name: "Fitness Gym",
+//     description:
+//       "Explore our fitness gym website built with raw HTML, CSS, and Bootstrap. Discover fitness programs, trainer profiles, and class schedules with a seamless and user-friendly design. Join us on the journey to a healthier lifestyle.",
+//     tags: [
+//       {
+//         name: "HTML",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "CSS",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "Bootstrap",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: gym,
+//     source_code_link: "https://github.com/Mahin-Hasan/Fitness-Gym",
+//     live_link: "https://mahin-hasan.github.io/Fitness-Gym/",
+//   }
+// ]
+
+//test project data
+// const projects = [
+//   {
+//     name: "ShareBite",
+//     description:
+//       "My website is centered around food donation. Users can register and add food for donation. Additionally, users have the capability to perform various CRUD operations by requesting food, deleting, or editing the foods they have added. For the backend and database, I have implemented Express and MongoDB.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "mongodb",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "tailwind",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "Node",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "firebase",
+//         color: "orange-text-gradient",
+//       },
+//       {
+//         name: "JWT",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "framer motion",
+//         color: "green-text-gradient",
+//       },
+//     ],
+//     image: sharebite,
+//     source_code_link: "https://github.com/Mahin-Hasan/ShareBite-Client",
+//     live_link: "https://sharebite-66978.web.app/",
+//   },
+//   {
+//     name: "JDM Automobiles",
+//     description:
+//       "This site is based on Japanese car dealership. I have used MERN stack to build this project. Also Used firebase Authentication for login purpose. There is a add to cart functionality where users can check all the added items in the cart. ",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "mongodb",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "node",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "firebase",
+//         color: "orange-text-gradient",
+//       },
+//       {
+//         name: "darkmode",
+//         color: "red-text-gradient",
+//       },
+//     ],
+//     image: jdm,
+//     source_code_link: "https://github.com/Mahin-Hasan/JDM-Automobiles-Client",
+//     live_link: "https://jdm-automobiles.web.app/",
+//   },
+//   {
+//     name: "Moments Matrimony",
+//     description:
+//       "This is a matrimonial site where uses can find their life partner. Users of this application have to register before finding a match. separate dashboard for user and admin feature has been implemented in this project. Also Added stripe payment gateway for recieving user payment for premium subscriptions.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "mongodb",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "node",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "firebase",
+//         color: "orange-text-gradient",
+//       },
+//       {
+//         name: "stripe",
+//         color: "red-text-gradient",
+//       },
+//       {
+//         name: "express",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "dashboard",
+//         color: "green-text-gradient",
+//       },
+//     ],
+//     image: moments,
+//     source_code_link: "https://github.com/Mahin-Hasan/Moments-Matrimony-Client",
+//     live_link: "https://moments-matrimony.web.app/",
+//   },
+// ];
+// const projects = [
+//   {
+//     name: "ShareBite",
+//     description:
+//       "My website is centered around food donation. Users can register and add food for donation. Additionally, users have the capability to perform various CRUD operations by requesting food, deleting, or editing the foods they have added. For the backend and database, I have implemented Express and MongoDB.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "mongodb",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "tailwind",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "Node",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "firebase",
+//         color: "orange-text-gradient",
+//       },
+//       {
+//         name: "JWT",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "framer motion",
+//         color: "green-text-gradient",
+//       },
+//     ],
+//     image: sharebite,
+//     source_code_link: "https://github.com/Mahin-Hasan/ShareBite-Client",
+//     live_link: "https://sharebite-66978.web.app/",
+//   },
+//   {
+//     name: "JDM Automobiles",
+//     description:
+//       "This site is based on Japanese car dealership. I have used MERN stack to build this project. Also Used firebase Authentication for login purpose. There is a add to cart functionality where users can check all the added items in the cart. ",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "mongodb",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "node",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "firebase",
+//         color: "orange-text-gradient",
+//       },
+//       {
+//         name: "darkmode",
+//         color: "red-text-gradient",
+//       },
+//     ],
+//     image: jdm,
+//     source_code_link: "https://github.com/Mahin-Hasan/JDM-Automobiles-Client",
+//     live_link: "https://jdm-automobiles.web.app/",
+//   },
+//   {
+//     name: "Moments Matrimony",
+//     description:
+//       "This is a matrimonial site where uses can find their life partner. Users of this application have to register before finding a match. separate dashboard for user and admin feature has been implemented in this project. Also Added stripe payment gateway for recieving user payment for premium subscriptions.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "mongodb",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "node",
+//         color: "pink-text-gradient",
+//       },
+//       {
+//         name: "firebase",
+//         color: "orange-text-gradient",
+//       },
+//       {
+//         name: "stripe",
+//         color: "red-text-gradient",
+//       },
+//       {
+//         name: "express",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "dashboard",
+//         color: "green-text-gradient",
+//       },
+//     ],
+//     image: moments,
+//     source_code_link: "https://github.com/Mahin-Hasan/Moments-Matrimony-Client",
+//     live_link: "https://moments-matrimony.web.app/",
+//   },
+// ];
+
+//CHECK---
+
 // const apps = [
 //   {
 //     name: "Wedding Snapshots",
@@ -689,8 +996,8 @@ const projects = [
 //     live_link: "https://mahin-hasan.github.io/Fitness-Gym/",
 //   },
 // ];
-// sadasdasd 1 2 3
-// const projectss = [
+// sadasdasd 1 2 3 | RAW
+// const projects = [
 //   {
 //     name: "Car Rent",
 //     description:
