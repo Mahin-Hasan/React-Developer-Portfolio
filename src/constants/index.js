@@ -176,7 +176,7 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  }
+  },
 ];
 
 // const experiences = [
@@ -270,7 +270,7 @@ const experiences = [
       "Instantly got interested in web technologies while being introduced to HTML,CSS and PHP",
       "Built a Computer Accessories E-commerce based shop with cart functionality with php and MySQL",
       "Also started to get comfortable with raw CSS and component library like bootstrap.",
-      "Explored Triggers, Functions, Procedures concepts of Advanced database management system"
+      "Explored Triggers, Functions, Procedures concepts of Advanced database management system",
     ],
   },
   {
@@ -316,10 +316,10 @@ const testimonials = [
   },
 ];
 
-
 //prev project working
 const projects = [
   {
+    id: "project-1",
     name: "ShareBite",
     description:
       "My website is centered around food donation. Users can register and add food for donation. Additionally, users have the capability to perform various CRUD operations by requesting food, deleting, or editing the foods they have added. For the backend and database, I have implemented Express and MongoDB.",
@@ -358,6 +358,7 @@ const projects = [
     live_link: "https://sharebite-66978.web.app/",
   },
   {
+    id: "project-2",
     name: "JDM Automobiles",
     description:
       "This site is based on Japanese car dealership. I have used MERN stack to build this project. Also Used firebase Authentication for login purpose. There is a add to cart functionality where users can check all the added items in the cart. ",
@@ -1062,6 +1063,5 @@ const projects = [
 //     source_code_link: "https://github.com/",
 //   },
 // ];
-
 
 export { services, technologies, experiences, testimonials, projects };
