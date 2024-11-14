@@ -44,6 +44,7 @@ import moments from "./moments.png";
 import wedding from "./wedding.png";
 import donation from "./donation.png";
 import gym from "./gym.png";
+import television from "./television.png";
 
 export {
   logo,
@@ -86,4 +87,5 @@ export {
   wedding,
   donation,
   gym,
+  television,
 };

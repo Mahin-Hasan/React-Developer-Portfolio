@@ -33,6 +33,7 @@ import {
   donation,
   gym,
   threejs,
+  television,
 } from "../assets";
 
 export const navLinks = [

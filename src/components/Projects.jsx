@@ -1,11 +1,11 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, television } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaHandPointRight } from "react-icons/fa";
 import { Link, Route, Router, Routes } from "react-router-dom";
 import { PiTelevisionBold } from "react-icons/pi";
 // import AllProjects from "./AllProjects";
@@ -13,6 +13,105 @@ import { lazy, useState } from "react";
 
 const AllProjects = lazy(() => import("./AllProjects"));
 
+// const ProjectCard = ({
+//   id,
+//   index,
+//   name,
+//   description,
+//   tags,
+//   image,
+//   source_code_link,
+//   live_link,
+// }) => {
+//   return (
+//     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+//       <Tilt
+//         options={{
+//           max: 15,
+//           scale: 1,
+//           speed: 450,
+//         }}
+//         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full relative"
+//       >
+//         <div className="relative w-full h-[230px]">
+//           <img
+//             src={image}
+//             alt="project_image"
+//             className="w-full h-full object-cover rounded-2xl"
+//           />
+
+//           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+//             <div
+//               onClick={() => window.open(live_link, "_blank")}
+//               className="purple-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-2 border-violet-950 drop-shadow-xl shadow-xl shadow-indigo-600/50"
+//             >
+//               <img  
+//                 src={television}
+//                 alt="Live link"
+//                 className="p-1 object-contain"
+//               />
+//             </div>
+//             <div
+//               onClick={() => window.open(source_code_link, "_blank")}
+//               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-2 border-blue-600 drop-shadow-xl shadow-xl shadow-indigo-600/50"
+//             >
+//               <img
+//                 src={github}
+//                 alt="source code"
+//                 className="p-1 object-contain"
+//               />
+//             </div>
+//           </div>
+//         </div>
+//         <div className="mt-5">
+//           <h3 className="text-white font-bold text-[24px]">{name}</h3>
+//           <p className="mt-2 text-secondary text-[14px]">{description}</p>
+//         </div>
+
+//         <div className="mt-4 flex flex-wrap gap-2 mb-10">
+//           {tags.map((tag) => (
+//             <p
+//               key={`${name}-${tag.name}`}
+//               className={`text-[14px] ${tag.color}`}
+//             >
+//               #{tag.name}
+//             </p>
+//           ))}
+//         </div>
+//         {/* <div className="flex justify-end absolute bottom-0 right-0 m-4">
+//           <Link to={live_link} target="blank">
+//             <button className="bg-purple-950 p-2 rounded-xl  outline-none w-fit text-white font-bold shadow-md shadow-primary">
+//               <div className="flex justify-center items-center gap-2">
+//                 <span>View Live</span>
+//                 <PiTelevisionBold />
+//               </div>
+//             </button>
+//           </Link>
+//         </div> */}
+//         <div className="flex justify-end absolute bottom-0 right-0 m-4">
+//           <Link to={`/projects/${id}`} target="blank">
+//             <button className="bg-purple-950 p-2 rounded-xl  outline-none w-fit text-white font-bold shadow-md shadow-primary">
+//               <div className="flex justify-center items-center gap-2">
+//                 <span>View Details</span>
+//                 <FaHandPointRight  />
+//               </div>
+//             </button>
+//           </Link>
+//         </div>
+//         {/* <div className="flex justify-end mt-4">
+//           <Link to={`/projects/${id}`}>
+//             <button className="bg-purple-950 py-2 px-4 rounded-xl text-white font-bold shadow-md shadow-primary">
+//               View Details
+//             </button>
+//           </Link>
+//         </div> */}
+//       </Tilt>
+//     </motion.div>
+//   );
+// };
+
+
+//without animation
 const ProjectCard = ({
   id,
   index,
@@ -24,7 +123,7 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <div>
       <Tilt
         options={{
           max: 15,
@@ -41,14 +140,24 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+            {/* <div
+              onClick={() => window.open(live_link, "_blank")}
+              className="purple-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-2 border-violet-950 drop-shadow-xl shadow-xl shadow-indigo-600/50"
+            >
+              <img  
+                src={television}
+                alt="Live link"
+                className="p-1 object-contain"
+              />
+            </div> */}
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              className="black-gradient w-11 h-11 rounded-full flex justify-center items-center cursor-pointer border-2 border-blue-600 drop-shadow-xl shadow-xl shadow-indigo-600/50"
             >
               <img
                 src={github}
                 alt="source code"
-                className="w-1/2 h-1/2 object-contain"
+                className="p-1 object-contain"
               />
             </div>
           </div>
@@ -78,18 +187,27 @@ const ProjectCard = ({
             </button>
           </Link>
         </div>
-        <div className="flex justify-end mt-4">
+        {/* <div className="flex justify-end absolute bottom-0 right-0 m-4">
+          <Link to={`/projects/${id}`} target="blank">
+            <button className="bg-purple-950 p-2 rounded-xl  outline-none w-fit text-white font-bold shadow-md shadow-primary">
+              <div className="flex justify-center items-center gap-2">
+                <span>View Details</span>
+                <FaHandPointRight  />
+              </div>
+            </button>
+          </Link>
+        </div> */}
+        {/* <div className="flex justify-end mt-4">
           <Link to={`/projects/${id}`}>
             <button className="bg-purple-950 py-2 px-4 rounded-xl text-white font-bold shadow-md shadow-primary">
               View Details
             </button>
           </Link>
-        </div>
+        </div> */}
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
-
 const Projects = () => {
   const [projectLimit, setProjectLimit] = useState(3);
 
