@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
@@ -8,8 +8,8 @@ import { menu, close, favicon } from "../assets";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
-  const locatoin = useLocation();
-  const isProjectDetailsRoute = locatoin.pathname.startsWith("/projects/");
+  // const locatoin = useLocation();
+  // const isProjectDetailsRoute = locatoin.pathname.startsWith("/projects/");
 
   return (
     <nav
@@ -27,23 +27,24 @@ const Navbar = () => {
           <img src={favicon} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             ahin &nbsp;
-            <span className="sm:block hidden">
+            <span className="md:block hidden">
               <span className="text-[#8a50ae]">|</span>&nbsp; Web Developer
             </span>
           </p>
         </Link>
 
         <>
-          <ul className="list-none hidden sm:flex flex-row gap-1 md:gap-4 lg:gap-10">
+          <ul className="list-none hidden sm:flex flex-row gap-1 md:gap-4 lg:gap-6">
             {navLinks.map((link) => (
               <li
+              id="nav-links"
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                  active === link.title ? "text-white underline" : "text-secondary"
+                } hover:text-white sm:text-sm lg:text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
-                <a href={`#${link.id}`}>{link.title}</a>
+                <h4 className="px-4 py-3"><a href={`#${link.id}`}>{link.title}</a></h4>
               </li>
             ))}
           </ul>
