@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[250px] w-full z-10'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -60,6 +60,9 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+      {/* Trying to create a animated ball */}
+      <div id="bouncy"></div>
+
     </>
   );
 };

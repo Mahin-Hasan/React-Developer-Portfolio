@@ -39,13 +39,8 @@
     #511359,
     #ffffff
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #210361,
-    #a095b7
-  );
+  background: linear-gradient(to right, #210361, #a095b7);
 }
-
 
 .violet-gradient {
   background: #804dee;
@@ -232,6 +227,51 @@
   }
 }
 
+/* Bouncy ball Animation */
+#bouncy {
+  height: 30vw;
+  width: 30vw;
+  position: absolute;
+  top: 68%;
+  left: 45%;
+  border-radius: 50%;
+  filter: blur(20px);
+  background: linear-gradient(to top right, #4b0082, #8a2be2);
+  animation-name: bouncy;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(
+    0.68,
+    -0.55,
+    0.27,
+    1.55
+  ); 
+}
+
+@keyframes bouncy {
+  0% {
+    transform: translate(10%, -10%) scale(1) rotate(0deg) skew(0deg);
+    filter: blur(20px);
+  }
+  25% {
+    transform: translate(-15%, 10%) scale(1.1) rotate(15deg) skew(-5deg);
+    filter: blur(25px);
+  }
+  50% {
+    transform: translate(-5%, -15%) scale(1.2) rotate(-15deg) skew(10deg);
+    filter: blur(30px);
+  }
+  75% {
+    transform: translate(15%, -5%) scale(1.15) rotate(10deg) skew(-10deg);
+    filter: blur(25px);
+  }
+  100% {
+    transform: translate(-10%, 8%) scale(1) rotate(0deg) skew(-12deg);
+    filter: blur(20px);
+  }
+}
+
 /* Navlinks animaiton */
 #nav-links h4 {
   border: 1px solid #0000003c;
@@ -269,12 +309,13 @@
   position: relative;
   z-index: 9;
 }
+
 /* Entry-loader */
 
 #entry-loader {
   height: 100%;
   width: 100%;
-  background-color:#0f0829;
+  background-color: #0f0829;
   position: fixed;
   z-index: 70;
   top: 0;
@@ -286,15 +327,14 @@
 }
 
 #entry-loader.hide-loader {
-  top: -100%; 
+  top: -100%;
 }
 
 #entry-loader h1 {
   color: transparent;
   font-size: 4vw;
   background: linear-gradient(to right, #9429ff, #2d42ff);
--webkit-background-clip: text;
-
+  -webkit-background-clip: text;
   position: absolute;
   opacity: 0;
   animation-name: load;
@@ -326,9 +366,13 @@
   }
 }
 @media (max-width: 600px) {
-
-
   #entry-loader h1 {
     font-size: 10vw;
+  }
+
+  #bouncy {
+    top: 91%;
+    height: 62vw;
+    width: 62vw;
   }
 }
