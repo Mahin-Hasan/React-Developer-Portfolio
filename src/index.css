@@ -241,12 +241,7 @@
   animation-duration: 14s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: cubic-bezier(
-    0.68,
-    -0.55,
-    0.27,
-    1.55
-  ); 
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 @keyframes bouncy {
@@ -276,18 +271,19 @@
 #nav-links h4 {
   border: 1px solid #0000003c;
   font-weight: 500;
-  color: #cf0202bb;
+  /* color: #cf0202bb; */
   border-radius: 50px;
   position: relative;
   transition: all ease 0.4s;
   overflow: hidden;
+
 }
 #nav-links h4::after {
   content: "";
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #cdc5ff;
+  background-color: #e7d4ff;
   left: 0;
   bottom: -100%;
   border-radius: 50%;
@@ -298,16 +294,18 @@
   border-radius: 0;
 }
 #nav-links h4 a {
-  color: #edededbb;
+  /* color: #edededbb; */
   text-decoration: none;
   position: relative;
   z-index: 9;
+
 }
 #nav-links h4:hover a {
   color: #16002a;
   text-decoration: none;
   position: relative;
   z-index: 9;
+
 }
 
 /* Entry-loader */
@@ -319,7 +317,7 @@
   position: fixed;
   z-index: 70;
   top: 0;
-  transition: top 0.7s ease; /* Smooth transition */
+  transition: top 0.7s ease; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -371,8 +369,9 @@
   }
 
   #bouncy {
-    top: 91%;
-    height: 62vw;
-    width: 62vw;
+    top: 95%;
+    left: 40%;
+    height: 42vw;
+    width: 42vw;
   }
 }
