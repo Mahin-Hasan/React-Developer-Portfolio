@@ -7,13 +7,13 @@ const Hero = () => {
   return (
     <section className="w-full h-screen mx-auto">
       <div
-        className={`${styles.paddingX} relative top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
+        className={`${styles.paddingX} relative top-[140px] max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-5`}
       >
         <div className="flex flex-col justify-center items-center gap-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
-        <div>
+        <div className="flex-1">
           <h1 className={`${styles.heroHeadText}`}>
             I&apos;m <span className="text-[#915eff]">Mahin</span>
           </h1>

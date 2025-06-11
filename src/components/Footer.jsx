@@ -64,7 +64,7 @@ const Footer = () => {
                         </Link>
                     </li>
                 </ul>
-                <div className="py-6 text-sm text-center">© All rights reserved <span className="text-purple-500 font-bold text-xl">|</span> Mahin Hasan 2024</div>
+                <div className="py-6 text-sm text-center">© All rights reserved <span className="text-purple-500 font-bold text-xl">|</span> Mahin Hasan {new Date().getFullYear()}</div>
             </div>
         </footer>
     );
