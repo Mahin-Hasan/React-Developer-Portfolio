@@ -23,7 +23,7 @@ const Hero = () => {
             functional web applicaitons
           </p>
           <Link
-            to="https://drive.google.com/file/d/12GNKR4q8Bh13_8rvHEEdono8EH-owrXP/view?usp=drive_link"
+            to="https://drive.google.com/file/d/1zshAPvqALdPcppsoCb7huPYe286PUg4V/view?usp=drive_link"
             target="black"
           >
             <button className="bg-purple-950 py-2 sm:py-3 px-3 sm:px-6 rounded-xl my-1 sm:my-4 outline-none w-fit text-white font-bold shadow-md shadow-primary">
